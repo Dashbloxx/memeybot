@@ -4,7 +4,7 @@ const client = new Discord.Client({
   fetchAllMembers: false,
 });
 const fs = require("fs");
-client.prefix = "/"; //change your prefix
+client.prefix = "!"; //change your prefix
 require("./utils/eventLoader")(client);//export event
     
 client.commands = new Discord.Collection();//create colection
@@ -27,4 +27,4 @@ fs.readdir("./commandes/fun", (err, files) => {       //copy this to each new fo
     });                                               //copy this to each new folder
   });                                                 //copy this to each new folder
 });                                                   //copy this to each new folder
-client.login(client.token);//change token bot
+client.login("NzU3NzE5NTgwMDU4NzE0MTg0.X2kfWQ.qPn-d4wDHB1GIh3vqW57WXFjNY8");//change token bot
